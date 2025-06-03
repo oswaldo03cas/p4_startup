@@ -6,69 +6,318 @@
     <title>AprendePlus - Educación en Línea</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <h1>AprendePlus</h1>
-        <p>Tu plataforma de aprendizaje en línea</p>
-    </header>
-    <section id="banner">
-            <img src="img/frase-motivadora-para-alumnos-1.jpg" alt="Estudiante motivado">
-        </section>
-    <h2>Misión:</h2>
-    <p>AprendePlus es la plataforma de educación en línea líder en formación tecnológica, diseñada para estudiantes autodidactas, profesionales en crecimiento y soñadores digitales. Ofrecemos cursos prácticos y accesibles con un enfoque 100% aplicable al mundo real.</p><hr>
-    <h2>Nuestros Pilares:</h2>
-    <ul>
-        <li>🖥️ Programación Web: Domina las herramientas para construir el internet del mañana.</li>
-        <li>📊 Ciencia de Datos: Convierte datos en decisiones poderosas con Python y Machine Learning.</li>
-        <li>🎨 Diseño UX/UI: Crea experiencias digitales que enamoren a los usuarios.</li>
-    </ul><hr>
-    <h2>¿Por qué elegirnos?</h2>
-    <ul>
-        <li>Precios competitivos (desde $89.99) 💲</li>
-        <li>Flexibilidad total ⏱️ - Aprende a tu ritmo</li>
-        <li> Certificados con validez profesional 📜</li>
-        <li>Imágenes inspiradoras (como nuestro banner motivacional) que te mantendrán enfocado 🚀</li>
-    </ul><hr>
-     <h2> Impacto:</h2>
-    <p>Más que una plataforma, somos una comunidad que cree en el poder autodidacta. ¡Tu éxito es nuestro código fuente!</p><hr>
-    <center><h1>📍 ¡Inscríbete hoy y comienza a escribir tu futuro en líneas de código (o diseños, o datos)! <br>
-    "En AprendePlus no vendemos cursos, construimos carreras." 💻❤️ </h1></center><hr>
-    <main>
-        <section id="servicios">
-            <h2>Nuestros Cursos Destacados</h2>
-            
-            <!-- Tarjeta 1 - Cambiado a clase "card" -->
-            <div class="card">
-                <img src="img/programacion.jpg" alt="Programación" class="curso-img">
-                <h3>Programación Web</h3>
-                <p>Aprende HTML, CSS y JavaScript desde cero.</p>
-                <p class="precio">$99.99</p>
-                <a href="#" class="btn">Inscribirse</a>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-graduation-cap me-2"></i>AprendePlus
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cursos">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beneficios">Beneficios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-outline-light ms-3">Iniciar Sesión</a>
             </div>
-            
-            <!-- Tarjeta 2 - Cambiado a clase "card" -->
-            <div class="card">
-                <img src="img/datascoemce.jpg" alt="Ciencia de datos" class="curso-img">
-                <h3>Ciencia de Datos</h3>
-                <p>Domina Python y machine learning.</p>
-                <p class="precio">$129.99</p>
-                <a href="#" class="btn">Inscribirse</a>
-            </div>
-            
-            <!-- Tarjeta 3 - Cambiado a clase "card" -->
-            <div class="card">
-                <img src="img/diseñouxui.jpg" alt="Diseño UX/UI" class="curso-img">
-                <h3>Diseño UX/UI</h3>
-                <p>Crea interfaces atractivas.</p>
-                <p class="precio">$89.99</p>
-                <a href="#" class="btn">Inscribirse</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Transforma tu futuro con educación en línea</h1>
+            <p class="lead mb-5">Aprende las habilidades más demandadas del mercado a tu propio ritmo</p>
+            <a href="#cursos" class="btn btn-primary btn-lg px-4 me-2">Ver Cursos</a>
+            <a href="#" class="btn btn-outline-light btn-lg px-4">Regístrate Gratis</a>
+        </div>
+    </section>
+
+    <!-- Contenido principal -->
+    <div class="container mb-5">
+        <!-- Misión -->
+        <section class="mb-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Nuestra Misión</h2>
+                    <p class="lead">AprendePlus es la plataforma de educación en línea líder en formación tecnológica, diseñada para estudiantes autodidactas, profesionales en crecimiento y soñadores digitales.</p>
+                    <p>Ofrecemos cursos prácticos y accesibles con un enfoque 100% aplicable al mundo real.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Equipo de trabajo" class="img-fluid rounded shadow">
+                </div>
             </div>
         </section>
-        
-    </main>
-    <footer>
-        <p>© 2024 AprendePlus. Todos los derechos reservados.</p>
+
+        <!-- Nuestros Pilares -->
+        <section class="mb-5">
+            <h2 class="text-center fw-bold mb-5">Nuestros Pilares Educativos</h2>
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Programación Web</h3>
+                    <p>Domina las herramientas para construir el internet del mañana. Aprende HTML, CSS, JavaScript y frameworks modernos.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Ciencia de Datos</h3>
+                    <p>Convierte datos en decisiones poderosas con Python, Machine Learning y análisis estadístico.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Diseño UX/UI</h3>
+                    <p>Crea experiencias digitales que enamoren a los usuarios con principios de diseño centrado en el humano.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Por qué elegirnos -->
+        <section class="mb-5 highlight-box">
+            <h2 class="fw-bold mb-4">¿Por qué elegir AprendePlus?</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Precios competitivos (desde $89.99)</li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Flexibilidad total - Aprende a tu ritmo</li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Certificados con validez profesional</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Instructores expertos en la industria</li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Acceso de por vida a los cursos</li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Comunidad activa de estudiantes</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cursos destacados -->
+        <section id="cursos" class="mb-5">
+            <h2 class="text-center fw-bold mb-5">Nuestros Cursos Destacados</h2>
+            <div class="row">
+                <!-- Curso 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top curso-img" alt="Programación Web">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-primary">Nuevo</span>
+                                <span class="price-tag">$99.99</span>
+                            </div>
+                            <h3 class="card-title">Programación Web Completa</h3>
+                            <p class="card-text">Aprende HTML, CSS, JavaScript y React desde cero hasta nivel profesional.</p>
+                            <div class="mb-3">
+                                <small class="text-muted"><i class="fas fa-clock me-1"></i> 60 horas</small>
+                                <small class="text-muted ms-3"><i class="fas fa-user-graduate me-1"></i> 4,500+ estudiantes</small>
+                            </div>
+                            <div class="d-grid">
+                                <a href="#" class="btn btn-primary">Inscribirse</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Curso 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top curso-img" alt="Ciencia de Datos">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-success">Popular</span>
+                                <span class="price-tag">$129.99</span>
+                            </div>
+                            <h3 class="card-title">Ciencia de Datos con Python</h3>
+                            <p class="card-text">Domina Python, Pandas, NumPy y Machine Learning para análisis de datos.</p>
+                            <div class="mb-3">
+                                <small class="text-muted"><i class="fas fa-clock me-1"></i> 80 horas</small>
+                                <small class="text-muted ms-3"><i class="fas fa-user-graduate me-1"></i> 3,200+ estudiantes</small>
+                            </div>
+                            <div class="d-grid">
+                                <a href="#" class="btn btn-primary">Inscribirse</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Curso 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1541462608143-67571c6738dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top curso-img" alt="Diseño UX/UI">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-warning text-dark">Oferta</span>
+                                <span class="price-tag">$89.99</span>
+                            </div>
+                            <h3 class="card-title">Diseño UX/UI Profesional</h3>
+                            <p class="card-text">Crea interfaces atractivas y usables con Figma y principios de diseño centrado en el usuario.</p>
+                            <div class="mb-3">
+                                <small class="text-muted"><i class="fas fa-clock me-1"></i> 50 horas</small>
+                                <small class="text-muted ms-3"><i class="fas fa-user-graduate me-1"></i> 2,800+ estudiantes</small>
+                            </div>
+                            <div class="d-grid">
+                                <a href="#" class="btn btn-primary">Inscribirse</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-primary btn-lg">Ver todos los cursos</a>
+            </div>
+        </section>
+
+        <!-- Testimonios -->
+        <section class="mb-5">
+            <h2 class="text-center fw-bold mb-5">Lo que dicen nuestros estudiantes</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 testimonial-card">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-quote-left text-muted"></i>
+                            </div>
+                            <p class="card-text">"El curso de Programación Web me dio las habilidades para conseguir mi primer trabajo como desarrollador frontend. Las explicaciones son claras y los proyectos prácticos son geniales."</p>
+                            <div class="d-flex align-items-center mt-4">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" class="rounded-circle me-3" width="50" alt="Testimonio 1">
+                                <div>
+                                    <h5 class="mb-0">Ana Martínez</h5>
+                                    <small class="text-muted">Desarrolladora Frontend</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 testimonial-card">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-quote-left text-muted"></i>
+                            </div>
+                            <p class="card-text">"Como diseñador gráfico, el curso de UX/UI me ayudó a dar el salto al mundo digital. Ahora trabajo diseñando interfaces para apps móviles con mucha más confianza."</p>
+                            <div class="d-flex align-items-center mt-4">
+                                <img src="https://randomuser.me/api/portraits/men/45.jpg" class="rounded-circle me-3" width="50" alt="Testimonio 2">
+                                <div>
+                                    <h5 class="mb-0">Carlos Rodríguez</h5>
+                                    <small class="text-muted">Diseñador UX/UI</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 testimonial-card">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-quote-left text-muted"></i>
+                            </div>
+                            <p class="card-text">"La ciencia de datos siempre me pareció intimidante, pero los instructores de AprendePlus lograron explicar conceptos complejos de manera sencilla. ¡Recomiendo totalmente!"</p>
+                            <div class="d-flex align-items-center mt-4">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" class="rounded-circle me-3" width="50" alt="Testimonio 3">
+                                <div>
+                                    <h5 class="mb-0">Laura González</h5>
+                                    <small class="text-muted">Analista de Datos</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Llamado a la acción -->
+        <section class="text-center py-5 bg-light rounded mb-5">
+            <h2 class="fw-bold mb-4">¿Listo para transformar tu carrera?</h2>
+            <p class="lead mb-4">Únete a miles de estudiantes que ya están construyendo su futuro con AprendePlus</p>
+            <a href="#" class="btn btn-primary btn-lg px-5">Empieza Ahora</a>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h3 class="h5 mb-3"><i class="fas fa-graduation-cap me-2"></i>AprendePlus</h3>
+                    <p>Tu plataforma de aprendizaje en línea para dominar las habilidades tecnológicas más demandadas.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h3 class="h5 mb-3">Cursos</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white">Programación</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Diseño</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Ciencia de Datos</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Marketing Digital</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Negocios</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h3 class="h5 mb-3">Compañía</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white">Nosotros</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Carreras</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Blog</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Afiliados</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Prensa</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h3 class="h5 mb-3">Contacto</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Av. Educación 123, Ciudad Digital</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> hola@aprendeplus.com</li>
+                    </ul>
+                    <div class="mt-3">
+                        <button class="btn btn-outline-light">Soporte</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-0 mb-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2024 AprendePlus. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#" class="text-white">Términos</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Privacidad</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
