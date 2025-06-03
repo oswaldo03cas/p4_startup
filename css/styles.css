@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+#servicios {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    margin: 1em;
+    width: 30%;
+}
