@@ -1,23 +1,95 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-header {
-    background-color: #ff0000;
-    color: white;
-    text-align: center;
-    padding: 1em;
-}
-#servicios {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1em;
-    margin: 1em;
-    width: 30%;
-}
+:root {
+            --primary-color: #dc3545;
+            --secondary-color: #343a40;
+            --accent-color: #ffc107;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/frase-motivadora-para-alumnos-1.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 30px;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .curso-img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-card {
+            background-color: #f8f9fa;
+            border-left: 5px solid var(--primary-color);
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 30px 0;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 15px;
+            transition: color 0.3s;
+        }
+        
+        .social-icons a:hover {
+            color: var(--accent-color);
+        }
+        
+        .highlight-box {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid var(--primary-color);
+        }
+        
+        .price-tag {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
